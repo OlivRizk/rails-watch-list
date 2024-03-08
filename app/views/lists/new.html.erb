@@ -1,7 +1,4 @@
 <h2>New list</h2>
-<%= simple_form_for [@list] do |f| %>
-  <%= f.input :name %>
-<%= f.submit "Add list", class: "btn btn-primary" %>
-<% end %>
+<%= render "form", list: @list %>
 
 <%= link_to "Back to lists", lists_path %>
